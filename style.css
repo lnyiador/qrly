@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f5eaff, #e9d5ff, #fce7f3);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+.app-container {
+    width: 100%;
+    max-width: 560px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 48px;
+    color: #7c3aed;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #6b4b83;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+.generator {
+    background: white;
+    padding: 35px;
+    border-radius: 24px;
+    box-shadow: 0 15px 40px rgba(80, 30, 120, 0.13);
+}
+
+.generator h2 {
+    color: #4c1d95;
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    text-align: left;
+    color: #4b3860;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+textarea {
+    width: 100%;
+    min-height: 125px;
+    padding: 15px;
+    border: 2px solid #e9d5ff;
+    border-radius: 12px;
+    font-size: 15px;
+    resize: vertical;
+    outline: none;
+    font-family: inherit;
+}
+
+textarea:focus {
+    border-color: #8b5cf6;
+}
+
+button {
+    padding: 14px 20px;
+    margin-top: 18px;
+    border: none;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#generate-btn {
+    width: 100%;
+    background: #8b5cf6;
+    color: white;
+}
+
+#generate-btn:hover {
+    background: #6d28d9;
+    transform: translateY(-2px);
+}
+
+#clear-btn {
+    width: 100%;
+    background: #f3e8ff;
+    color: #6d28d9;
+}
+
+#clear-btn:hover {
+    background: #e9d5ff;
+}
+
+#qr-result {
+    margin-top: 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+#qr-result canvas,
+#qr-result img {
+    max-width: 100%;
+    height: auto;
+    padding: 10px;
+    background: white;
+    border-radius: 12px;
+}
+
+#qr-result button {
+    background: #16a34a;
+    color: white;
+    width: 100%;
+}
+
+#qr-result button:hover {
+    background: #15803d;
+}
+
+footer {
+    margin-top: 25px;
+    color: #76568d;
+    font-size: 13px;
+}
+
+@media (max-width: 480px) {
+    .generator {
+        padding: 24px 18px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+}

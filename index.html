@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QRly - QR Code Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="app-container">
+        <h1>💜 QRly</h1>
+        <p class="subtitle">Turn your links and text into QR codes!</p>
+
+        <section class="generator">
+            <h2>Create your QR Code</h2>
+
+            <label for="qr-input">Enter your text or website link</label>
+            <textarea id="qr-input" placeholder="Paste your link or type something..."></textarea>
+
+            <button id="generate-btn">Generate QR Code</button>
+            <button id="clear-btn">Clear</button>
+
+            <div id="qr-result"></div>
+        </section>
+
+        <footer>
+            Made with 💜 | QRly 2026
+        </footer>
+    </main>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
